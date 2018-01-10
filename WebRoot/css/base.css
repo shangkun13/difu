@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+
+.windows_600 {
+	padding: 20px;
+	width: 600px;
+	margin: auto;
+}
+
+.windows_600 .text18 {
+	font-size: 18px;
+	font-family: "宋体";
+	line-height: 50px;
+}
+
+.windows_600 .button_g {
+	background-color: #5B9F01;
+	width: 180px;
+	height: 50px;
+	margin: 10px auto;
+	padding: 15px 25px;
+	border-bottom: 5px #060 solid;
+	text-align: center
+}
+
+.windows_600 .button_b {
+	background-color: #73A5D4;
+	width: 180px;
+	height: 50px;
+	margin: 10px auto;
+	padding: 15px 25px;
+	border-bottom: 5px #5680A7 solid;
+	text-align: center
+}
+
+.windows_600 .text_w {
+	color: #FFF;
+}
+
+.windows_600 a {
+	text-decoration: none;
+}
+
+.windows_600 a:hover {
+	text-decoration: none;
+}
+
+.windows_600 h2 {
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.windows_600 p {
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+}
+
+* {
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: "微软雅黑", Tahoma;
+	font-size: 12px;
+	padding-top: 0px;
+}
+
+.colorHui {
+	color: #959595;
+}
+
+.f14 {
+	font-size: 14px;
+}
+
+.l30 {
+	line-height: 30px;
+}
+
+.bg_31 {
+	margin: auto;
+	width: 1000px;
+	background: url(../images/mail/bg_10.gif) #fff repeat-x;
+	padding-top: 10px;
+}
+
+* {
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: "宋体";
+	PADDING-TOP: 0px;
+}
+
+INPUT {
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	vertical-align: middle;
+	padding-top: 0px;
+}
+
+.file-box0922 {
+	position: relative;
+	width: 340px;
+}
+
+.txt0922 {
+	border-bottom: #cdcdcd 1px solid;
+	border-left: #cdcdcd 1px solid;
+	width: 180px;
+	height: 22px;
+	border-top: #cdcdcd 1px solid;
+	border-right: #cdcdcd 1px solid;
+}
+
+img {
+	border: 0;
+}
+
+.btn0922 {
+	border-bottom: #cdcdcd 1px solid;
+	border-left: #cdcdcd 1px solid;
+	background-color: #fff;
+	width: 70px;
+	height: 24px;
+	border-top: #cdcdcd 1px solid;
+	border-right: #cdcdcd 1px solid;
+}
+
+.file0922 {
+	position: absolute;
+	filter: alpha(opacity :     0);
+	WIDTH: 260px;
+	height: 24px;
+	top: 5px;
+	right: 80px;
+	opacity: 0;
+}

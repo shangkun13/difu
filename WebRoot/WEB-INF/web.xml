@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<listener>
+		<listener-class>com.baihui.difu.action.TimeListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>Log4jInit</servlet-name>
+		<servlet-class>com.baihui.difu.util.Log4JInit</servlet-class>
+		<init-param>
+			<param-name>Log4jpro</param-name>
+			<param-value>/WEB-INF/conf/log4j.properties</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+
+<!-- 	<resource-ref> -->
+<!-- 		<description>difu Database</description> -->
+<!-- 		<res-ref-name>jdbc/difu</res-ref-name> -->
+<!-- 		<res-type>javax.sql.DataSource</res-type> -->
+<!-- 		<res-auth>Container</res-auth> -->
+<!-- 	</resource-ref> -->
+	<servlet>
+		<servlet-name>FileUpload</servlet-name>
+		<servlet-class>com.baihui.difu.controller.FileUpload</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryAll</servlet-name>
+		<servlet-class>com.baihui.difu.controller.queryAllCustom</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>deleteCrmData</servlet-name>
+		<servlet-class>com.baihui.difu.controller.deleteCrmData</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryAllToday</servlet-name>
+		<servlet-class>com.baihui.difu.controller.queryAllCustomToday</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>bulkDeleteCrmData</servlet-name>
+		<servlet-class>com.baihui.difu.controller.bulkDeleteCrmData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>bulkDeleteCrmData</servlet-name>
+		<url-pattern>/bulkDeleteCrmData.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryAllToday</servlet-name>
+		<url-pattern>/queryAllToday.do</url-pattern>
+	</servlet-mapping>
+ 	<servlet-mapping>
+		<servlet-name>deleteCrmData</servlet-name>
+		<url-pattern>/deleteCrmData.do</url-pattern>
+	</servlet-mapping>
+ 	<servlet-mapping>
+		<servlet-name>queryAll</servlet-name>
+		<url-pattern>/queryAll.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUpload</servlet-name>
+		<url-pattern>/file_upload.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteByBaiHuiID</servlet-name>
+		<servlet-class>com.baihui.difu.controller.DeleteByBaiHuiID</servlet-class>
+	</servlet>
+ 
+	<servlet-mapping>
+		<servlet-name>DeleteByBaiHuiID</servlet-name>
+		<url-pattern>/deleteByBaiHuiID.do</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>jsp/uploadFile.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
